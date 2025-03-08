@@ -33,7 +33,7 @@ const Login = () => {
         try {
             let res = await axios.post("http://localhost:3100/auth/login", values);
             console.log(res.data.token);
-            const token = res.data.token;
+            const token = res.data.token;   
             if (token !== undefined) {
                 window.localStorage.setItem("token", token);   
                 toast.success("User Login Successfully");
@@ -43,7 +43,7 @@ const Login = () => {
             }
         } catch (e) {
             console.log(e);
-            toast.error("User Not Login Successfully");
+            toast.error("User Not Login Successfully"); 
         }
     };
     return (
@@ -117,8 +117,7 @@ const Login = () => {
                                                     className="cr-form-control"
                                                 />
                                                 <ErrorMessage name="password" component="div" className="text-danger" />
-                                            </div>
-
+                                            </div>  
                                             <div className="remember">
                                                 <span className="form-group custom">
                                                     <Field type="checkbox" name="remember" id="remember" />

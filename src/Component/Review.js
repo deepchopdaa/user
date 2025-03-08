@@ -1,6 +1,20 @@
-import React from 'react'
+import axios from 'axios'
+import React, { useEffect, useState } from 'react'
 
 const Review = () => {
+    const [review, setreview] = useState(null)
+    useEffect(async () => {
+        await axios.get("http://localhost:3100/review/getuserreview", {
+            headers: {
+                Authorization: "Bearer " + localStorage.getItem("token")
+            }
+        }).then((reviews) => {
+            setreview(reviews)
+            console.log(reviews)
+        }).catch((e) => {
+            console.error("Review not Featched", e)
+        })
+    }, [])
     return (
         <>
             <section className="section-testimonial padding-b-100">
@@ -22,6 +36,16 @@ const Review = () => {
                         <div className="col-lg-12">
                             <div className="cr-testimonial-slider swiper-container">
                                 <div className="swiper-wrapper cr-testimonial-pt-50">
+
+                                    {/* {
+                                        review?.map((reviews) => (
+                                            <>
+                                            <h1>{reviews.user.id}</h1>
+                                            <h1>{reviews.game.id}</h1>
+                                            <h1>{reviews.comment}</h1>
+                                            </>
+                                        ))
+                                    } */}
                                     <div className="swiper-slide" data-aos="fade-up" data-aos-duration={2000}>
                                         <div className="cr-testimonial">
                                             <div className="cr-testimonial-image">

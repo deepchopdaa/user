@@ -1,12 +1,32 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import PopularProduct from './PopularProduct'
 import Footer from './Footer'
 import Header from './Header'
+import axios from 'axios'
+import { useParams } from 'react-router-dom'
 
 const ProductDetail = () => {
+    const [gamedetail,setgamedetail] = useState(null);
+    const id = useParams();
+    console.log(id.id)
+    useEffect(() => {
+        const Detail = async () => {
+           axios.get(`http://localhost:3100/userpenel/productDetail/${id.id}`,{
+            headers: {
+                Authorization: "Bearer " + localStorage.getItem("token")
+            }   
+        }).then((detail)=>{
+            setgamedetail(detail.data)
+            console.log(detail.data)
+        }).catch((e)=>{
+            console.log('Product Detail Not Found',e)
+        })
+        }
+        Detail()
+    },[])
     return (
         <>
-            <Header/>
+            <Header />
             <div>
                 <section className="section-breadcrumb">
                     <div className="cr-breadcrumb-image">
@@ -32,12 +52,13 @@ const ProductDetail = () => {
                                         <div className="slider slider-for">
                                             <div className="slider-banner-image">
                                                 <div className="zoom-image-hover">
-                                                    <img src="assets/img/product/9.jpg" alt="product-tab-1" className="product-image" />
+                                                    <img src={require('../img/product/9.jpg')} alt="product-tab-1" className="product-image" />
+                                                    {/* <img src="assets/img/" alt="product-tab-1" className="product-image" /> */}
                                                 </div>
                                             </div>
-                                            
+
                                         </div>
-                                    
+
                                     </div>
                                 </div>
                             </div>
@@ -169,7 +190,7 @@ const ProductDetail = () => {
                                             <div className="cr-tab-content-from">
                                                 <div className="post">
                                                     <div className="content">
-                                                        <img src="assets/img/review/1.jpg" alt="review" />
+                                                        <img src="../img/review/1.jpg" alt="review" />
                                                         <div className="details">
                                                             <span className="date">Jan 08, 2024</span>
                                                             <span className="name">Oreo Noman</span>
@@ -187,7 +208,7 @@ const ProductDetail = () => {
                                                         adipisci vel
                                                         perferendis dolor! quae vero in perferendis provident quis.</p>
                                                     <div className="content mt-30">
-                                                        <img src="assets/img/review/2.jpg" alt="review" />
+                                                        <img src="../img/review/2.jpg" alt="review" />
                                                         <div className="details">
                                                             <span className="date">Mar 22, 2024</span>
                                                             <span className="name">Lina Wilson</span>
@@ -237,8 +258,8 @@ const ProductDetail = () => {
                     </div>
                 </section>
             </div>
-            <PopularProduct/>   
-            <Footer/>
+            <PopularProduct />
+            <Footer />
         </>
     )
 }

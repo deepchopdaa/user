@@ -63,7 +63,7 @@ const Category = () => {
                                                     <div className="categories-button">
                                                         <a href="shop-left-sidebar.html" className="cr-button">shop now</a>
                                                     </div>
-                                                </div>
+                                                </div>  
                                                 <img src="assets/img/categories/3.jpg" alt="categories-3" />
                                             </div>
                                         </div>
@@ -86,6 +86,190 @@ const Category = () => {
                                                     </div>
                                                 </div>
                                                 <img src="assets/img/categories/4.jpg" alt="categories-4" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="tab-pane fade" id="meat" role="tabpanel" aria-labelledby="meat-tab">
+                                    <div className="row mb-minus-24">
+                                        <div className="col-6 cr-categories-box">
+                                            <div className="cr-side-categories">
+                                                <div className="categories-inner">
+                                                    <h4>35
+                                                        <span>
+                                                            <small>%</small>
+                                                            <small>Off</small>
+                                                        </span>
+                                                    </h4>
+                                                </div>
+                                                <div className="categories-contain">
+                                                    <div className="categories-text">
+                                                        <h5>Fish Meat</h5>
+                                                    </div>
+                                                    <div className="categories-button">
+                                                        <a href="shop-left-sidebar.html" className="cr-button">shop now</a>
+                                                    </div>
+                                                </div>
+                                                <img src="assets/img/categories/1.jpg" alt="categories-1" />
+                                            </div>
+                                        </div>
+                                        <div className="col-6 cr-categories-box">
+                                            <div className="cr-side-categories">
+                                                <div className="categories-inner">
+                                                    <h4>24
+                                                        <span>
+                                                            <small>%</small>
+                                                            <small>Off</small>
+                                                        </span>
+                                                    </h4>
+                                                </div>
+                                                <div className="categories-contain">
+                                                    <div className="categories-text">
+                                                        <h5>Fresh Meat</h5>
+                                                    </div>
+                                                    <div className="categories-button">
+                                                        <a href="shop-left-sidebar.html" className="cr-button">shop now</a>
+                                                    </div>
+                                                </div>
+                                                <img src="assets/img/categories/2.jpg" alt="categories-2" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="tab-pane fade" id="Vegetables" role="tabpanel" aria-labelledby="Vegetables-tab">
+                                    <div className="row mb-minus-24">
+                                        <div className="col-6 cr-categories-box mb-24">
+                                            <div className="cr-side-categories">
+                                                <div className="categories-inner">
+                                                    <h4>45
+                                                        <span>
+                                                            <small>%</small>
+                                                            <small>Off</small>
+                                                        </span>
+                                                    </h4>
+                                                </div>
+                                                <div className="categories-contain">
+                                                    <div className="categories-text">
+                                                        <h5>Coriander</h5>
+                                                    </div>
+                                                    <div className="categories-button">
+                                                        <a href="shop-left-sidebar.html" className="cr-button">shop now</a>
+                                                    </div>
+                                                </div>
+                                                <img src="assets/img/categories/5.jpg" alt="categories-5" />
+                                            </div>
+                                        </div>
+                                        <div className="col-6 cr-categories-box mb-24">
+                                            <div className="cr-side-categories">
+                                                <div className="categories-inner">
+                                                    <h4>20
+                                                        <span>
+                                                            <small>%</small>
+                                                            <small>Off</small>
+                                                        </span>
+                                                    </h4>
+                                                </div>
+                                                <div className="categories-contain">
+                                                    <div className="categories-text">
+                                                        <h5>Broccoli</h5>
+                                                    </div>
+                                                    <div className="categories-button">
+                                                        <a href="shop-left-sidebar.html" className="cr-button">shop now</a>
+                                                    </div>
+                                                </div>
+                                                <img src="assets/img/categories/6.jpg" alt="categories-6" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="tab-pane fade" id="Custard" role="tabpanel" aria-labelledby="Custard-tab">
+                                    <div className="row mb-minus-24">
+                                        <div className="col-6 cr-categories-box mb-24">
+                                            <div className="cr-side-categories">
+                                                <div className="categories-inner">
+                                                    <h4>30
+                                                        <span>
+                                                            <small>%</small>
+                                                            <small>Off</small>
+                                                        </span>
+                                                    </h4>
+                                                </div>
+                                                <div className="categories-contain">
+                                                    <div className="categories-text">
+                                                        <h5>Apple</h5>
+                                                    </div>
+                                                    <div className="categories-button">
+                                                        <a href="shop-left-sidebar.html" className="cr-button">shop now</a>
+                                                    </div>
+                                                </div>
+                                                <img src="assets/img/categories/7.jpg" alt="categories-7" />
+                                            </div>
+                                        </div>
+                                        <div className="col-6 cr-categories-box mb-24">
+                                            <div className="cr-side-categories">
+                                                <div className="categories-inner">
+                                                    <h4>25
+                                                        <span>
+                                                            <small>%</small>
+                                                            <small>Off</small>
+                                                        </span>
+                                                    </h4>
+                                                </div>
+                                                <div className="categories-contain">
+                                                    <div className="categories-text">
+                                                        <h5>Mango</h5>
+                                                    </div>
+                                                    <div className="categories-button">
+                                                        <a href="shop-left-sidebar.html" className="cr-button">shop now</a>
+                                                    </div>
+                                                </div>
+                                                <img src="assets/img/categories/8.jpg" alt="categories-8" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="tab-pane fade" id="Strawberry" role="tabpanel" aria-labelledby="Strawberry-tab">
+                                    <div className="row mb-minus-24">
+                                        <div className="col-6 cr-categories-box mb-24">
+                                            <div className="cr-side-categories">
+                                                <div className="categories-inner">
+                                                    <h4>33
+                                                        <span>
+                                                            <small>%</small>
+                                                            <small>Off</small>
+                                                        </span>
+                                                    </h4>
+                                                </div>
+                                                <div className="categories-contain">
+                                                    <div className="categories-text">
+                                                        <h5>Strawberry</h5>
+                                                    </div>
+                                                    <div className="categories-button">
+                                                        <a href="shop-left-sidebar.html" className="cr-button">shop now</a>
+                                                    </div>
+                                                </div>
+                                                <img src="assets/img/categories/9.jpg" alt="categories-9" />
+                                            </div>
+                                        </div>
+                                        <div className="col-6 cr-categories-box mb-24">
+                                            <div className="cr-side-categories">
+                                                <div className="categories-inner">
+                                                    <h4>15
+                                                        <span>
+                                                            <small>%</small>
+                                                            <small>Off</small>
+                                                        </span>
+                                                    </h4>
+                                                </div>
+                                                <div className="categories-contain">
+                                                    <div className="categories-text">
+                                                        <h5>Strawberry</h5>
+                                                    </div>
+                                                    <div className="categories-button">
+                                                        <a href="shop-left-sidebar.html" className="cr-button">shop now</a>
+                                                    </div>
+                                                </div>
+                                                <img src="assets/img/categories/10.jpg" alt="categories-10" />
                                             </div>
                                         </div>
                                     </div>

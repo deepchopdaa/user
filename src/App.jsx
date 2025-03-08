@@ -10,9 +10,9 @@ import ProductDetail from './Component/ProductDetail.jsx';
 import ContactUs from './Component/ContactUs.js';
 import Cart from './Component/Cart.jsx';
 import PopularProduct from './Component/PopularProduct.jsx';
-
-
-
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   const router = createBrowserRouter([
     {
@@ -32,7 +32,11 @@ function App() {
       element: <ProductDetail />,
     },
     {
-      path:'/home/populor',
+      path: '/product/:id',
+      element: <ProductDetail />,
+    },
+    { 
+      path:'/populor',
       element:<PopularProduct/>
     },
     {
